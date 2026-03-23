@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="modules">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="solvers">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="exe">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MInDes_EXE.cpp">
+      <Filter>exe</Filter>
+    </ClCompile>
+    <ClCompile Include="solvers\Solvers.cpp">
+      <Filter>solvers</Filter>
+    </ClCompile>
+    <ClCompile Include="solvers\Solver_Allen_Cahn.cpp">
+      <Filter>solvers</Filter>
+    </ClCompile>
+    <ClCompile Include="solvers\Solver_Cahn_Hilliard.cpp">
+      <Filter>solvers</Filter>
+    </ClCompile>
+    <ClCompile Include="solvers\Solver_custom.cpp">
+      <Filter>solvers</Filter>
+    </ClCompile>
+    <ClCompile Include="solvers\Solver_Fluid.cpp">
+      <Filter>solvers</Filter>
+    </ClCompile>
+    <ClCompile Include="solvers\Solver_Mechanics.cpp">
+      <Filter>solvers</Filter>
+    </ClCompile>
+    <ClCompile Include="solvers\Solver_poisson_equation.cpp">
+      <Filter>solvers</Filter>
+    </ClCompile>
+    <ClCompile Include="solvers\Solver_Temperature.cpp">
+      <Filter>solvers</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="modules\base\BMP24Reader.h">
+      <Filter>modules</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\base\InputFileMath.h">
+      <Filter>modules</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\base\InputFileReader.h">
+      <Filter>modules</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\base\NucleationTools.h">
+      <Filter>modules</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\base\PresetFunctions.h">
+      <Filter>modules</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\Base.h">
+      <Filter>modules</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\input\AutoInput.h">
+      <Filter>modules</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\input\MeshStructure.h">
+      <Filter>modules</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\input\SolverInit.h">
+      <Filter>modules</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\input\TimeInterval.h">
+      <Filter>modules</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\InputManager.h">
+      <Filter>modules</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\modules.h">
+      <Filter>modules</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\SimModelsManager.h">
+      <Filter>modules</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\SimPostprocess.h">
+      <Filter>modules</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\SimPreprocess.h">
+      <Filter>modules</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\sim_models\BulkEnergy\ChemicalEnergy.h">
+      <Filter>modules</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\sim_models\BulkEnergy\ElectricEnergy.h">
+      <Filter>modules</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\sim_models\BulkEnergy\MagneticEnergy.h">
+      <Filter>modules</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\sim_models\BulkEnergy\MechanicalEnergy.h">
+      <Filter>modules</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\sim_models\BulkEnergy\OtherEnergy.h">
+      <Filter>modules</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\sim_models\BulkEnergy.h">
+      <Filter>modules</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\sim_models\InterfaceEnergy.h">
+      <Filter>modules</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\sim_models\Kinetics.h">
+      <Filter>modules</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\sim_models\Mobility.h">
+      <Filter>modules</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\sim_models\Source\BulkReaction.h">
+      <Filter>modules</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\sim_models\Source\Convection.h">
+      <Filter>modules</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\sim_models\Source\InterfaceReaction.h">
+      <Filter>modules</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\sim_models\Source\Reaction\ElectrodeReaction.h">
+      <Filter>modules</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\sim_models\Source.h">
+      <Filter>modules</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\sim_postprocess\CpuMemoryUsage.h">
+      <Filter>modules</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\sim_postprocess\Crack.h">
+      <Filter>modules</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\sim_postprocess\ElectricField.h">
+      <Filter>modules</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\sim_postprocess\FieldOptimization.h">
+      <Filter>modules</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\sim_postprocess\FluidDynamics\LatticeBoltzmann.h">
+      <Filter>modules</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\sim_postprocess\FluidDynamics\LBM_funcs\BoundaryCondition.h">
+      <Filter>modules</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\sim_postprocess\FluidDynamics\LBM_funcs\EquiDistFunc.h">
+      <Filter>modules</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\sim_postprocess\FluidDynamics\LBM_funcs\MacroVar.h">
+      <Filter>modules</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\sim_postprocess\FluidDynamics\LBM_funcs\Source.h">
+      <Filter>modules</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\sim_postprocess\FluidDynamics\PressureCorrection.h">
+      <Filter>modules</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\sim_postprocess\FluidField.h">
+      <Filter>modules</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\sim_postprocess\MechanicalField.h">
+      <Filter>modules</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\sim_postprocess\Mechanics\ElasticSolver.h">
+      <Filter>modules</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\sim_postprocess\Mechanics\PlasticSolver.h">
+      <Filter>modules</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\sim_postprocess\Mechanics\StiffnessEigenStrain.h">
+      <Filter>modules</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\sim_postprocess\Noise.h">
+      <Filter>modules</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\sim_postprocess\Statistics.h">
+      <Filter>modules</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\sim_postprocess\WritePhiCT.h">
+      <Filter>modules</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\sim_preprocess\BoundaryCondition.h">
+      <Filter>modules</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\sim_preprocess\ConcentrationInit.h">
+      <Filter>modules</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\sim_preprocess\MicroStructureInit.h">
+      <Filter>modules</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\sim_preprocess\Pretreatment.h">
+      <Filter>modules</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\XXXXX_EXAMPLE.h">
+      <Filter>modules</Filter>
+    </ClInclude>
+    <ClInclude Include="solvers\base\FieldStorage.h">
+      <Filter>solvers</Filter>
+    </ClInclude>
+    <ClInclude Include="solvers\base\NormalNode.h">
+      <Filter>solvers</Filter>
+    </ClInclude>
+    <ClInclude Include="solvers\base\PairValueNode.h">
+      <Filter>solvers</Filter>
+    </ClInclude>
+    <ClInclude Include="solvers\base\PhaseNode.h">
+      <Filter>solvers</Filter>
+    </ClInclude>
+    <ClInclude Include="solvers\base\RotationMatrix.h">
+      <Filter>solvers</Filter>
+    </ClInclude>
+    <ClInclude Include="solvers\base\SublatticNode.h">
+      <Filter>solvers</Filter>
+    </ClInclude>
+    <ClInclude Include="solvers\base\sysTool.h">
+      <Filter>solvers</Filter>
+    </ClInclude>
+    <ClInclude Include="solvers\base\timer.h">
+      <Filter>solvers</Filter>
+    </ClInclude>
+    <ClInclude Include="solvers\base\vectorMatrix.h">
+      <Filter>solvers</Filter>
+    </ClInclude>
+    <ClInclude Include="solvers\base\WriteToFile.h">
+      <Filter>solvers</Filter>
+    </ClInclude>
+    <ClInclude Include="solvers\base.h">
+      <Filter>solvers</Filter>
+    </ClInclude>
+    <ClInclude Include="solvers\Solvers.h">
+      <Filter>solvers</Filter>
+    </ClInclude>
+    <ClInclude Include="solvers\Solver_Allen_Cahn.h">
+      <Filter>solvers</Filter>
+    </ClInclude>
+    <ClInclude Include="solvers\Solver_Cahn_Hilliard.h">
+      <Filter>solvers</Filter>
+    </ClInclude>
+    <ClInclude Include="solvers\Solver_custom.h">
+      <Filter>solvers</Filter>
+    </ClInclude>
+    <ClInclude Include="solvers\Solver_Fluid.h">
+      <Filter>solvers</Filter>
+    </ClInclude>
+    <ClInclude Include="solvers\Solver_Mechanics.h">
+      <Filter>solvers</Filter>
+    </ClInclude>
+    <ClInclude Include="solvers\Solver_poisson_equation.h">
+      <Filter>solvers</Filter>
+    </ClInclude>
+    <ClInclude Include="solvers\Solver_Temperature.h">
+      <Filter>solvers</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

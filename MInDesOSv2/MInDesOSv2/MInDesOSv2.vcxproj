@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{f92f9904-48ef-475b-8812-2866dc23c66c}</ProjectGuid>
+    <RootNamespace>MInDesOSv2</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="MInDes_EXE.cpp" />
+    <ClCompile Include="solvers\Solvers.cpp" />
+    <ClCompile Include="solvers\Solver_Allen_Cahn.cpp" />
+    <ClCompile Include="solvers\Solver_Cahn_Hilliard.cpp" />
+    <ClCompile Include="solvers\Solver_custom.cpp" />
+    <ClCompile Include="solvers\Solver_Fluid.cpp" />
+    <ClCompile Include="solvers\Solver_Mechanics.cpp" />
+    <ClCompile Include="solvers\Solver_poisson_equation.cpp" />
+    <ClCompile Include="solvers\Solver_Temperature.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="modules\Base.h" />
+    <ClInclude Include="modules\base\BMP24Reader.h" />
+    <ClInclude Include="modules\base\InputFileMath.h" />
+    <ClInclude Include="modules\base\InputFileReader.h" />
+    <ClInclude Include="modules\base\NucleationTools.h" />
+    <ClInclude Include="modules\base\PresetFunctions.h" />
+    <ClInclude Include="modules\InputManager.h" />
+    <ClInclude Include="modules\input\AutoInput.h" />
+    <ClInclude Include="modules\input\MeshStructure.h" />
+    <ClInclude Include="modules\input\SolverInit.h" />
+    <ClInclude Include="modules\input\TimeInterval.h" />
+    <ClInclude Include="modules\modules.h" />
+    <ClInclude Include="modules\SimModelsManager.h" />
+    <ClInclude Include="modules\SimPostprocess.h" />
+    <ClInclude Include="modules\SimPreprocess.h" />
+    <ClInclude Include="modules\sim_models\BulkEnergy.h" />
+    <ClInclude Include="modules\sim_models\BulkEnergy\ChemicalEnergy.h" />
+    <ClInclude Include="modules\sim_models\BulkEnergy\ElectricEnergy.h" />
+    <ClInclude Include="modules\sim_models\BulkEnergy\MagneticEnergy.h" />
+    <ClInclude Include="modules\sim_models\BulkEnergy\MechanicalEnergy.h" />
+    <ClInclude Include="modules\sim_models\BulkEnergy\OtherEnergy.h" />
+    <ClInclude Include="modules\sim_models\InterfaceEnergy.h" />
+    <ClInclude Include="modules\sim_models\Kinetics.h" />
+    <ClInclude Include="modules\sim_models\Mobility.h" />
+    <ClInclude Include="modules\sim_models\Source.h" />
+    <ClInclude Include="modules\sim_models\Source\BulkReaction.h" />
+    <ClInclude Include="modules\sim_models\Source\Convection.h" />
+    <ClInclude Include="modules\sim_models\Source\InterfaceReaction.h" />
+    <ClInclude Include="modules\sim_models\Source\Reaction\ElectrodeReaction.h" />
+    <ClInclude Include="modules\sim_postprocess\CpuMemoryUsage.h" />
+    <ClInclude Include="modules\sim_postprocess\Crack.h" />
+    <ClInclude Include="modules\sim_postprocess\ElectricField.h" />
+    <ClInclude Include="modules\sim_postprocess\FieldOptimization.h" />
+    <ClInclude Include="modules\sim_postprocess\FluidDynamics\LatticeBoltzmann.h" />
+    <ClInclude Include="modules\sim_postprocess\FluidDynamics\LBM_funcs\BoundaryCondition.h" />
+    <ClInclude Include="modules\sim_postprocess\FluidDynamics\LBM_funcs\EquiDistFunc.h" />
+    <ClInclude Include="modules\sim_postprocess\FluidDynamics\LBM_funcs\MacroVar.h" />
+    <ClInclude Include="modules\sim_postprocess\FluidDynamics\LBM_funcs\Source.h" />
+    <ClInclude Include="modules\sim_postprocess\FluidDynamics\PressureCorrection.h" />
+    <ClInclude Include="modules\sim_postprocess\FluidField.h" />
+    <ClInclude Include="modules\sim_postprocess\MechanicalField.h" />
+    <ClInclude Include="modules\sim_postprocess\Mechanics\ElasticSolver.h" />
+    <ClInclude Include="modules\sim_postprocess\Mechanics\PlasticSolver.h" />
+    <ClInclude Include="modules\sim_postprocess\Mechanics\StiffnessEigenStrain.h" />
+    <ClInclude Include="modules\sim_postprocess\Noise.h" />
+    <ClInclude Include="modules\sim_postprocess\Statistics.h" />
+    <ClInclude Include="modules\sim_postprocess\WritePhiCT.h" />
+    <ClInclude Include="modules\sim_preprocess\BoundaryCondition.h" />
+    <ClInclude Include="modules\sim_preprocess\ConcentrationInit.h" />
+    <ClInclude Include="modules\sim_preprocess\MicroStructureInit.h" />
+    <ClInclude Include="modules\sim_preprocess\Pretreatment.h" />
+    <ClInclude Include="modules\XXXXX_EXAMPLE.h" />
+    <ClInclude Include="solvers\base.h" />
+    <ClInclude Include="solvers\base\FieldStorage.h" />
+    <ClInclude Include="solvers\base\NormalNode.h" />
+    <ClInclude Include="solvers\base\PairValueNode.h" />
+    <ClInclude Include="solvers\base\PhaseNode.h" />
+    <ClInclude Include="solvers\base\RotationMatrix.h" />
+    <ClInclude Include="solvers\base\SublatticNode.h" />
+    <ClInclude Include="solvers\base\sysTool.h" />
+    <ClInclude Include="solvers\base\timer.h" />
+    <ClInclude Include="solvers\base\vectorMatrix.h" />
+    <ClInclude Include="solvers\base\WriteToFile.h" />
+    <ClInclude Include="solvers\Solvers.h" />
+    <ClInclude Include="solvers\Solver_Allen_Cahn.h" />
+    <ClInclude Include="solvers\Solver_Cahn_Hilliard.h" />
+    <ClInclude Include="solvers\Solver_custom.h" />
+    <ClInclude Include="solvers\Solver_Fluid.h" />
+    <ClInclude Include="solvers\Solver_Mechanics.h" />
+    <ClInclude Include="solvers\Solver_poisson_equation.h" />
+    <ClInclude Include="solvers\Solver_Temperature.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
