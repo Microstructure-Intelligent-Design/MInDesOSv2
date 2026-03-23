@@ -197,9 +197,6 @@
     <ClInclude Include="modules\sim_preprocess\Pretreatment.h">
       <Filter>modules</Filter>
     </ClInclude>
-    <ClInclude Include="modules\XXXXX_EXAMPLE.h">
-      <Filter>modules</Filter>
-    </ClInclude>
     <ClInclude Include="solvers\base\FieldStorage.h">
       <Filter>solvers</Filter>
     </ClInclude>

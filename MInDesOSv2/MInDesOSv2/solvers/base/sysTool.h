@@ -37,7 +37,7 @@ This program is free software: you can redistribute it and/or modify it under th
 #include <thread>
 #include <chrono>
 #ifdef _WIN32
-#define SYS_PROGRAM_STOP while(true){getchar();};
+#define SYS_PROGRAM_STOP std::exit(0);
 //#define SYS_PROGRAM_STOP std::exit(0);
 #define IS_NAN(a) _isnan(a)
 #include <tchar.h>

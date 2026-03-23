@@ -19,50 +19,55 @@ This program is free software: you can redistribute it and/or modify it under th
 
 #include "modules/modules.h"
 int main(int argc, char* argv[]) {
-	// read input file
-
 	// get solver
 	pf::Solvers* solver = pf::Solvers::get_instance();
-
-#ifdef _WIN32
-	string infile_path;
-	string fname = "path.in";
-	std::fstream fin(fname, std::ios::in);
+	string infile_path, fname = "path.in";
 	bool is_init_by_last = false;
-	if (!fin) {
-		is_init_by_last = false;
-		fin.close();
-		pf::printf_color_on_control("> Some information/funtions of MInDes (I/i), or normal initialization (N/n)?");
-		cout << endl;
-		char c = getchar(); char enter = getchar(); //get enter
-		if (c == 'i' || c == 'I') {
-			solver->mid_info();
-		}
+	if (argc == 2) {
+		is_init_by_last = true;
+		infile_path = argv[1];
 	}
-	else {
-		getline(fin, infile_path);
-		fin.close();
-		pf::printf_color_on_control("> Last mid input file is " + infile_path);
-		cout << endl;
-		pf::printf_color_on_control("> Init this input file again (Y/y), or some information/funtions of MInDes (I/i), or normal initialization (N/n)?");
-		cout << endl;
-		char c = getchar(); char enter = getchar(); //get enter
-		if (c == 'y' || c == 'Y')
-			is_init_by_last = true;
-		else if (c == 'i' || c == 'I') {
-			solver->mid_info();
+	else if (argc == 1) {
+#ifdef _WIN32
+		std::fstream fin(fname, std::ios::in);
+		if (!fin) {
+			is_init_by_last = false;
+			fin.close();
+			pf::printf_color_on_control("> Some information/funtions of MInDes (I/i), or normal initialization (N/n)?\n");
+			char c = getchar(); char enter = getchar(); //get enter
+			if (c == 'i' || c == 'I') {
+				solver->mid_info();
+				return 0;
+			}
 		}
-		else if (c != 'N' && c != 'n') {
-			pf::printf_color_on_control("> MInDes EXIT !!!");
-			cout << endl;
-			exit(0);
+		else {
+			is_init_by_last = false;
+			getline(fin, infile_path);
+			fin.close();
+			pf::printf_color_on_control("> Last mid input file is " + infile_path + "\n");
+			pf::printf_color_on_control("> Init this input file again (Y/y), or some information/funtions of MInDes (I/i), or normal initialization (N/n)?\n");
+			char c = getchar(); char enter = getchar(); //get enter
+			if (c == 'y' || c == 'Y')
+				is_init_by_last = true;
+			else if (c == 'i' || c == 'I') {
+				solver->mid_info();
+				return 0;
+			}
 		}
+#else
+		solver->mid_info();
+		return 0;
+#endif
+	}
+	if (argc >= 3) {
+		string _path = argv[0];
+		pf::printf_color_on_control("> Please dont input more than one string after " + _path + "!\n");
+		SYS_PROGRAM_STOP;
 	}
 	if (is_init_by_last == false) {
 		if (!pf::SelectFilePath(infile_path)) {
-			pf::printf_color_on_control("> MInDes EXIT !!!");
-			cout << endl;
-			exit(0);
+			pf::printf_color_on_control("> MInDes EXIT !!!\n");
+			SYS_PROGRAM_STOP;
 		}
 	}
 	std::fstream fout(fname, std::ios::out);
@@ -72,18 +77,6 @@ int main(int argc, char* argv[]) {
 	}
 	fout << infile_path;
 	fout.close();
-#else
-	if (argc <= 1) {
-		solver->mid_info();
-	}
-	else if (argc >= 3) {
-		string _path = argv[0];
-		pf::printf_color_on_control("> Please dont input more than one string after " + _path + "!");
-		cout << endl;
-		SYS_PROGRAM_STOP;
-	}
-	std::string infile_path(argv[1]);
-#endif
 
 	solver->init(infile_path);
 
@@ -91,4 +84,5 @@ int main(int argc, char* argv[]) {
 
 	solver->run();
 
+	return 0;
 }

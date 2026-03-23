@@ -185,7 +185,6 @@
     <ClInclude Include="modules\sim_preprocess\ConcentrationInit.h" />
     <ClInclude Include="modules\sim_preprocess\MicroStructureInit.h" />
     <ClInclude Include="modules\sim_preprocess\Pretreatment.h" />
-    <ClInclude Include="modules\XXXXX_EXAMPLE.h" />
     <ClInclude Include="solvers\base.h" />
     <ClInclude Include="solvers\base\FieldStorage.h" />
     <ClInclude Include="solvers\base\NormalNode.h" />
